@@ -131,7 +131,7 @@ end
 function crimson_update(name, line, wc)
    if wc.index == "" then
       printmsg("{x238<{R*{x238> {RC{rhecking {Ri{rf {Ru{rpdate {Ri{rs {Ra{rvailable {Rf{ror {Rt{rhe {RC{rrimson {RP{rlugin {RM{ranager.. {RP{rlease {Rw{rait. {x238<{R*{x238>\r\n\r\n")
-      local url = "https://raw.githubusercontent.com/AsmodeusBrooding/DemonUpdater/master/DemonMUSH_Plugin_Manager.xml"
+      local url = "https://raw.githubusercontent.com/AsmodeusBrooding/Crimson/master/Crimson_Plugin_Manager.xml"
       async.doAsyncRemoteRequest(url, async_crimson_download_complete, "HTTPS", 120)
    else
       Execute("crimson install " .. wc.index)
